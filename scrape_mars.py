@@ -43,7 +43,7 @@ def scrape_info():
     df=df.rename(columns={'Mars - Earth Comparison':" "})
     mars_html_table=df.to_html()
 
-
+##is this where I mess up in this file?
     hemispheres = [
         {"title": "Cerberus Hemisphere", "img_url": "https://marshemispheres.com/images/full.jpg"},
         {"title": "Schiaparelli Hemisphere", "img_url": "https://marshemispheres.com/images/schiaparelli_enhanced-full.jpg"},
