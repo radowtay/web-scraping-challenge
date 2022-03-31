@@ -10,9 +10,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/weather_app")
 
 
 # #variables
-
-
-#     #create route
+#create route
 # @app.route("/")
 # def echo():
 #     return render_template("index.html",
@@ -28,8 +26,6 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/weather_app")
 @app.route("/")
 def home():
     mars_stuff=mongo.db.mars_stuff.find_one()
-
-    # Find one record of data from the mongo database
 
 
     # Return template and data
